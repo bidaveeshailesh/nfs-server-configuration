@@ -1,59 +1,76 @@
-# nfs-server-configuration
-Linux-based NFS server configuration project demonstrating shared storage between a master server and client servers, including file access, permissions, and read/write operations.
-# NFS Server Configuration
+# NFS Server Configuration on Linux
 
-## Project Date
+## 📌 Project Overview
 
-2025
+This project demonstrates how to configure an **NFS (Network File System) server on Linux** to share directories between a server and client system over a network.
 
-## Project Overview
+The project covers NFS installation, directory sharing, permissions, service management, client mounting, and testing.
 
-This project demonstrates the configuration of a Network File System
-(NFS) server using Linux.
+## 🏗️ Project Architecture
 
-The NFS server provides shared storage that can be accessed by
-client servers over a network.
+```text id="7x3mqa"
+             Network
+                |
+       +--------+--------+
+       |                 |
+       v                 v
+ NFS Server          NFS Client
+       |                 |
+       | Exported        | Mounted
+       | Directory       | Directory
+       +--------+--------+
+                |
+          Shared Files
+```
 
-## Technologies Used
+## 🐧 Technologies Used
 
 - Linux
 - NFS
-- Networking
-- File Permissions
 - Shell Commands
+- File Permissions
+- System Services
+- Git & GitHub
 
-## Project Objectives
+## ⚙️ Configuration Steps
 
-- Configure an NFS server
-- Create a shared directory
-- Configure NFS exports
-- Mount the shared directory on client servers
-- Manage file permissions
-- Allow clients to read and write shared data
+1. Install the NFS server package.
+2. Create a directory to share.
+3. Configure the NFS export.
+4. Set appropriate directory permissions.
+5. Start and enable the NFS service.
+6. Configure firewall rules if required.
+7. Install the NFS client components.
+8. Mount the shared directory on the client.
+9. Test file creation and access between the server and client.
 
-## Basic Architecture
+## 🔐 Security
 
-NFS Server
-     |
-     | Network
-     |
-     +----------------+
-     |                |
-     v                v
- Client 1          Client 2
+Basic security considerations include:
 
-Clients can access the shared directory
-provided by the NFS server.
+- Restricting which clients can access the export
+- Using appropriate file permissions
+- Limiting network access with firewall rules
+- Sharing only required directories
+- Managing user and group permissions carefully
 
-## Key Learning
+## 🎯 What I Learned
 
-- NFS server configuration
-- NFS client configuration
-- Mounting and unmounting file systems
-- Linux file permissions
-- Network-based file sharing
-- Managing shared directories
+- Linux NFS fundamentals
+- Server-client architecture
+- Network file sharing
+- Linux directory permissions
+- Mounting remote file systems
+- Linux service management
+- Basic network troubleshooting
+- Documenting Linux projects using GitHub
 
-## Project Type
+## 📂 Project Type
 
-Resume Project / Learning Project
+**Linux / Server Administration / NFS / Networking / DevOps**
+
+## 👨‍💻 Author
+
+**Shailesh Bidave**
+
+GitHub: [@bidaveeshailesh](https://github.com/bidaveeshailesh)
